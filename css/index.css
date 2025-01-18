@@ -1,0 +1,200 @@
+html,
+body {
+    height: auto;
+    /* Allow the height to adapt to the content */
+    margin: 0;
+}
+
+/* Nav Bar */
+
+nav {
+    position: sticky;
+    top: 0;
+    /* Ensure it sticks to the top */
+    z-index: 1030;
+    /* Ensure it stays above other content */
+    background-color: white;
+    /* Ensure the background is visible when scrolling */
+    height: 13vh;
+    /* Keep your current height */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow for better visibility */
+}
+
+.fa-whatsapp{
+    font-size: 30px;
+    color: var(--clr-green);
+}
+
+.fa-phone{
+    font-size: 25px;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-right: 30px;
+}
+
+@media (max-width: 977px) {
+    .navbar-nav{
+        margin-right: 5px;
+    }
+}
+
+.nav-link{
+    padding: 0px !important;
+}
+
+
+/* carousel */
+
+.carousel {
+    height: 87vh;
+}
+
+.carousel-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 87vh;
+}
+
+.carousel-inner img {
+    height: 87vh;
+    object-fit: cover;
+}
+
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-caption>h2{
+    font-size: 42px;
+}
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 87vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust transparency here */
+    z-index: 1;
+}
+
+
+
+/* About us page */
+
+.about-us-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-title {
+    color: var(--clr-green);
+    margin-bottom: 30px;
+}
+
+.bullet-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.bullet-list>span {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    text-align: left;
+}
+
+.bullet-list>span>i {
+    margin-top: 5px;
+    color: var(--clr-green);
+    background-color: black;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .about-us-container {
+        padding: 50px 10px;
+    }
+}
+
+/* Services Section */
+
+.services-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f8ff;
+    padding: 50px 0px;
+}
+
+@media (max-width: 992px) {
+    .services-section {
+        padding: 50px 0px;
+    }
+}
+
+.services-title-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.services-title-wrapper>h5{
+    margin-bottom: 0px;
+}
+
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-body>h5{
+    color: var(--clr-green);
+}
+
+.card-body>a{
+    background-color: var(--clr-green);
+    color: white;
+}
