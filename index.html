@@ -25,57 +25,44 @@
 <body>
 
     <!-- Navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: white;">
-        <div class="container-fluid justify-content-between">
-            <!-- Left elements -->
-            <div class="d-flex">
-                <!-- Brand -->
-                <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
-                    <h3 style="color: var(--clr-green);">Logo</h3>
-                </a>
-            </div>
-            <!-- Left elements -->
-
-            <!-- Center elements -->
-            <ul class="navbar-nav flex-row d-none d-md-flex">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact-us</a>
-                </li>
-            </ul>
-            <!-- Center elements -->
-
-            <!-- Right elements -->
-            <ul class="navbar-nav flex-row">
-                <li class="nav-item me-3 me-lg-1">
+    <nav class="navbar navbar-expand-lg navbar-light" style="min-height: 10vh;">
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="/" style="padding-bottom: 13px; width: 197px;"><img style="height: 40px;"
+                    src="images/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: center; width: 100%;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" style="width: 197px;">
                     <a class="nav-link d-sm-flex align-items-sm-center" href="#">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
-                </li>
-                <li class="nav-item me-3 me-lg-1">
                     <a class="nav-link" href="#">
                         <span><i class="fa fa-phone" aria-hidden="true"></i></span>
                     </a>
-                </li>
-            </ul>
-            <!-- Right elements -->
+                </span>
+            </div>
         </div>
     </nav>
     <!-- Navbar -->
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="home">
             <div class="carousel-item active">
                 <div class="image-overlay">
                     <img src="images/slider1.avif" class="d-block w-100" alt="...">
@@ -119,37 +106,43 @@
 
 
     <!-- About Us Section -->
-    <section class="about-section text-center text-md-start">
+    <section class="about-section text-center text-md-start" id="about-us">
         <div class="container about-us-container">
             <div class="row align-items-center">
                 <!-- Text Content -->
-                <div class="col-md-6 mb-4 mb-md-0">
+                <div class="col-md-6 mb-4 mb-md-0 about-us-txt-area">
                     <h5 class="highlight about-us-title">About Us</h5>
                     <h2 class="fw-bold">How can we assist you?</h2>
                     <br>
-                    <p>
+                    <p class="about-us-txt">
                         Everything from <span class="fw-bold">air conditioning</span> units to
                         <span class="fw-bold">plumbing</span> and <span class="fw-bold">electrics</span>.
                         Don’t worry! We’ve got you covered with our expert property maintenance services.
                     </p>
                     <br>
-                    <p>
+                    <p class="about-us-txt">
                         With over <span class="fw-bold">10 years of average experience</span> in the
                         region, our technicians cover all major communities across Dubai. Expect
                         high-quality results, professional support, and a stress-free journey with
                         Breathe Home Maintenance as your trusted service provider.
                     </p>
                     <br>
-                    <p>
+                    <p class="about-us-txt">
                         <span class="fw-bold">We guarantee</span> you will have a stress-free journey
                         with Breathe Home Maintenance as your trusted service provider.
                     </p>
                     <br>
                     <div class="bullet-list">
-                        <span><i class="fas fa-check-circle"></i>Best in the Market</span>
-                        <span><i class="fas fa-check-circle"></i>Highly Experienced Technicians</span>
-                        <span><i class="fas fa-check-circle"></i>Individual Services and Monthly Maintenance Agreements
+                        <span class="about-us-bulits"><i class="fas fa-check-circle"></i>Best in the Market</span>
+                        <span class="about-us-bulits"><i class="fas fa-check-circle"></i>Highly Experienced
+                            Technicians</span>
+                        <span class="about-us-bulits"><i class="fas fa-check-circle"></i>Individual Services and Monthly
+                            Maintenance Agreements
                             with Flexible Payment Options</span>
+                        <span class="about-us-bulits"><i class="fas fa-check-circle"></i>Operating 7 days/week: from 8am
+                            – 6pm</span>
+                        <span class="about-us-bulits"><i class="fas fa-check-circle"></i>Customer Care Hotline:
+                            available 24/7, 365 days a year</span>
                     </div>
                 </div>
 
@@ -162,7 +155,7 @@
     </section>
 
     <!-- Our Services -->
-    <section class="about-section text-center text-md-start services-section">
+    <section class="about-section text-center text-md-start services-section" id="our-services">
         <div class="container">
             <div class="services-title-wrapper">
                 <h5 class="highlight about-us-title">Our Maintenance Services</h5>
@@ -176,7 +169,7 @@
                             <h5 class="card-title">Air Conditioning</h5>
                             <p class="card-text">Because in our hot and humid climate keeping your AC running
                                 efficiently is essential…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -187,7 +180,7 @@
                             <h5 class="card-title">Duct Cleaning</h5>
                             <p class="card-text">Complete HVAC system services including cleaning and replacing air
                                 filters and cleaning grilles…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -197,8 +190,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Coil Cleaning</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
-                            <a href="#" class="btn">Learn More</a>
+                                to additional content...</p>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +202,7 @@
                             <h5 class="card-title">Water Tank Cleaning</h5>
                             <p class="card-text">Ensuring your water system is cleaned and disinfected to the highest
                                 safety standards…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -220,7 +213,7 @@
                             <h5 class="card-title">Plumbing</h5>
                             <p class="card-text">Everything from leaky kitchen faucets and bathroom repairs to major
                                 drainage issues…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -231,7 +224,7 @@
                             <h5 class="card-title">Handyman</h5>
                             <p class="card-text">Completing those random repair jobs around the house can make a big
                                 difference…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +235,7 @@
                             <h5 class="card-title">Electrical</h5>
                             <p class="card-text">Play it safe and let our experts deal with power shortages and blown
                                 fittings…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
                 </div>
@@ -253,9 +246,50 @@
                             <h5 class="card-title">Painting</h5>
                             <p class="card-text">Fancy a fresh coat? Our team of experts will get your property looking
                                 picture perfect…</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="#" class="btn services-list-btn">Call Us</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section text-center text-md-start" id="contact-us">
+        <div class="container about-us-container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-6 mb-4 mb-md-0 about-us-txt-area">
+                    <h5 class="highlight about-us-title">Contact Us</h5>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18906.129712753736!2d6.722624160288201!3d60.12672284414915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463e997b1b6fc09d%3A0x6ee05405ec78a692!2sJ%C4%99zyk%20trola!5e0!3m2!1spl!2spl!4v1672239918130!5m2!1spl!2spl"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Image Content -->
+                <div class="col-md-6 team-image text-center">
+                    <h2 class="fw-bold" style="color: #6ac30b;;">Let's have a chit chat</h2>
+                    <br>
+                    <p class="about-us-txt">
+                        Everything from <span class="fw-bold">air conditioning</span> units to
+                        <span class="fw-bold">plumbing</span> and <span class="fw-bold">electrics</span>.
+                        Don’t worry! We’ve got you covered with our expert property maintenance services.
+                    </p>
+                    <br>
+                    <p class="about-us-txt">
+                        With over <span class="fw-bold">10 years of average experience</span> in the
+                        region, our technicians cover all major communities across Dubai. Expect
+                        high-quality results, professional support, and a stress-free journey with
+                        Breathe Home Maintenance as your trusted service provider.
+                    </p>
+                    <br>
+                    <p class="about-us-txt">
+                        <span class="fw-bold">We guarantee</span> you will have a stress-free journey
+                        with Breathe Home Maintenance as your trusted service provider.
+                    </p>
                 </div>
             </div>
         </div>
@@ -270,8 +304,10 @@
                     <br>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Features</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Pricing</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">About</a></li>
                     </ul>
@@ -281,8 +317,10 @@
                     <br>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Features</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Pricing</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">About</a></li>
                     </ul>
@@ -293,8 +331,10 @@
                     <br>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Features</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">Pricing</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white;">About</a></li>
                     </ul>
@@ -336,9 +376,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
-        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <script>
         var myCarousel = document.querySelector('#myCarousel')
